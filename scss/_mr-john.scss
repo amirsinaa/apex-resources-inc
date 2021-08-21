@@ -1,0 +1,136 @@
+.about-mj-ghaznavi {
+  position: relative;
+  .row {
+    position: relative;
+  }
+  .jonj-description-box {
+    @media screen and (min-width: 1199px) {
+    position: relative;
+    top: 1rem;      
+    }
+  }
+  li {
+    a {
+      &:hover {
+        color: $white !important;
+      }
+    }
+  }
+  .sharp-btn {
+    color: $white;
+    border: 0;
+    @include animated-button(
+      "false",
+      $john-red,
+      $john-red,
+      $john-red
+    );
+    padding: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    @media only screen and (min-width: 503px) and (max-width: 768px) {
+      bottom: 1rem;
+      position: relative;
+      right: 0.5rem;
+    }
+    @media only screen and (min-width: 503px) {
+      float: right;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      font-size: 10px;
+    }
+  }
+  .more-about-john {
+    @media only screen and (min-width: 992px) {
+      .text-white {
+        font-size: 27px;
+      }
+      .text-primary-dark {
+        font-size: 21px;
+      }
+    }
+    @media only screen and (min-width: 1200px) {
+      position: relative;
+      top: 5rem;
+      display: table;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      position: relative;
+      top: 4rem;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      position: relative;
+      top: 6rem;
+      display: table;
+      right: 3rem;
+    }
+  }
+  .animated-ghaznavi {
+    position: absolute;
+    right: 25px;
+    bottom: -65px;
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      bottom: -25px;
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+    @media only screen and (max-width: 767px) {
+      -webkit-transform: scale(0.4);
+      -ms-transform: scale(0.4);
+      transform: scale(0.4);
+      bottom: 110px;
+      left: 310px;
+      .circle-obj {
+        display: none;
+      }
+      img {
+        bottom: -15px !important;
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      position: absolute;
+      right: 0;
+      bottom: 40px;
+      -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      transform: scale(0.6);
+      img {
+        bottom: -50px;
+      }
+      .circle-obj {
+        display: none;
+      }
+    }
+    .circle-obj {
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 33.3px;
+    }
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 45px;
+    }
+    .circle-primary {
+      border: 1.3px solid $primary;
+      width: 280px;
+      height: 280px;
+      right: 10px;
+      bottom: 45px;
+    }
+    .circle-gray {
+      border: 1.3px solid $dark-primary;
+      width: 300px;
+      left: -260px;
+      height: 300px;
+      bottom: 23px;
+      @media only screen and (max-width: 1285px) {
+        width: 280px;
+        height: 280px;
+        bottom: 38px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.raw-materials-section {
+	position: relative;
+	background-image: url("../img/raw-BG-1920.jpg");
+	background-position: 50% -20%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	@include background-size(cover);
+	img {
+		@media only screen and (max-width: 767px) {
+			padding-bottom: 2rem;
+		}
+	}
+	.primary-title {
+		color: darken(#de5e3c, 3.33%);
+	}
+}

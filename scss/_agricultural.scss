@@ -1,0 +1,23 @@
+.agricultural-products {
+	background: $agri-color;
+	.primary-title {
+		color: $white !important;
+	}
+	@media only screen and (max-width: 768px) {
+		.agri-box-w-img-wrapper {
+			@include horiz-align;
+			.agri-img-wrapper {
+        display: inline-block !important;
+        // img {
+        //   width: 80px;
+        //   height: 80px;
+        // }
+			}
+			span {
+				display: -webkit-box !important;
+				display: -ms-flexbox !important;
+				display: flex !important;
+			}
+		}
+	}
+}

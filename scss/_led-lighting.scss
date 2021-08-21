@@ -1,0 +1,42 @@
+.led-lighting-solutions {
+  background-color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @media only screen and (min-width: 992px) {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+  position: relative;
+	background-image: url("../img/led.png");
+	background-position: 50% 50%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  @include background-size(cover);
+  @media only screen and (min-width:992px) {
+    @include background-size(contain);
+  }
+  .list-group-flush {
+    i {
+      color: $john-red !important;
+    }
+    li {
+      color: $gray-800;
+      &:hover {
+        cursor: pointer;
+        color: $john-red;
+      }
+    }
+  }
+  .sharp-btn {
+    color: $white;
+    border: 0;
+    @include animated-button(
+      "false",
+      $primary,
+      $primary,
+      $primary
+    );
+  }
+}

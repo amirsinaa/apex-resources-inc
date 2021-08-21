@@ -1,0 +1,23 @@
+.real-estate-and-development {
+  background-color: #0c2a46;
+  position: relative;
+  @media only screen and (min-width: 768px) {
+    background-image: url("../img/real-Bg-1920.jpg");
+    background-position: -80% 100%;
+    min-height: 37rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    @include background-size(cover);
+  }
+  .real-estate-list {
+    li {
+      color: $white !important;
+      &:hover {
+        color: $primary !important;
+        cursor: pointer;
+      }
+    }
+  }
+}

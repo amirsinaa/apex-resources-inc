@@ -1,0 +1,163 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.font-weight-normal {
+  font-weight: normal !important;
+}
+
+.dropdown-slide {
+  &:hover {
+    cursor: pointer;
+  }
+  &>.dropdown-menu {
+    font-size: 0.8rem;
+    opacity: .3;
+    padding: 5px 15px;
+    display: block;
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transform: scale(1, 0);
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+  }
+}
+
+.show.dropdown-slide {
+  &>.dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    @media only screen and (max-width: 991px) {
+      display: block;
+    }
+  }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	background: $primary !important;
+	color: $white !important;
+}
+
+.btn {
+  font-weight: bold !important;
+  border: none;
+  border-radius: 300px;
+  @include set-font($body-font);
+}
+
+.btn-xl {
+  padding: 0.5rem 2.2rem;
+}
+
+.btn-md {
+  padding: 0.5rem 1.5rem;
+}
+
+.sharp-btn {
+  border-radius: 0;
+  @include animated-button( "true", $primary, $primary, $primary);
+  @media only screen and (max-width: 502px) {
+    @include horiz-align;
+    font-size: 12px;
+  }
+}
+
+.sharp-btn-about {
+  @media only screen and (max-width: 767px) {
+    @include horiz-align;
+    font-size: 12px;
+  }
+}
+
+.oil-and-gas-btn {
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: normal;
+  border-radius: 0;
+  @include animated-button( "true", $primary, $primary, $primary);
+  @media only screen and (max-width: 767px) {
+    font-size: 11px;
+  }
+}
+
+.agricultural-btn {
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: normal;
+  border-radius: 0;
+  @include animated-button( "true", $lighten-agri-color, $lighten-agri-color, $lighten-agri-color);
+}
+
+.intro-btn {
+  background-color: transparent;
+  @media (min-width: 992px) {
+    font-size: 2.25rem;
+  }
+  @media (max-width: 991px) {
+    @include horiz-align;
+    float: none !important;
+    text-align: center !important;
+  }
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: $primary !important;
+  &:hover {
+    color: $white !important;
+  }
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 5%) !important;
+  }
+  &:active,
+  &:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba($primary, 0.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.5) !important;
+  }
+}
+
+.bg-white {
+  background-color: $white;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 5%) !important;
+  }
+  &:active,
+  &:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba($primary, 0.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.5) !important;
+  }
+}

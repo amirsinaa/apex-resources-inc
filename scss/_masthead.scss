@@ -1,0 +1,79 @@
+.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 3.5rem);
+  background-image: url("../img/header.jpg");
+  background-position: 50%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  @include background-size(cover);
+  h1.apex-slogan {
+    font-size: 1.8rem;
+    @media (max-width: 991px) {
+      @include horiz-align;
+      float: none;
+      float: none !important; 
+      text-align: center !important;
+    }
+    @include set-font($body-font);
+    word-spacing: -2px;
+    letter-spacing: -3px;
+    text-shadow: 9.5px 9.5px 22px $black;
+    font-weight: 580 !important;
+  }
+  @media (min-width: 1325px) {
+    h1.apex-slogan {
+      position: relative;
+      left: 40px;
+    }
+  }
+  @media (min-width: 992px) {
+    @include background-size(cover);
+    height: 85vh;
+    min-height: 40.625rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    h1.apex-slogan {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.about-us-masthead {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url("../img/pages/pagesIntroParallax.png");
+  height: 334px;
+  @include background-size(cover);
+  background-position: unset;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  @media only screen and (min-width: 1199px) and (max-width: 1900px) {
+    @include background-size(contain);
+    margin-top: 4.1rem;
+    background-position: 50% 20%;
+  }
+
+  .stretch-title {
+    -webkit-transform: scale(1, 1.18);
+    -ms-transform: scale(1, 1.18);
+    transform: scale(1, 1.18);
+  }
+  h1.pages-intro-title {
+    font-size: 2.2rem;
+    text-align: right;
+    @media (max-width: 991px) {
+      @include horiz-align;
+      float: none;
+      float: none !important; 
+      text-align: center !important;
+    }
+    @include set-font($title-font);
+    word-spacing: -1px;
+    letter-spacing: -2px;
+    font-weight: bolder;
+  }
+}

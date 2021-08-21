@@ -1,0 +1,39 @@
+.drugs-and-medical {
+  position: relative;
+	background-image: url("../img/drug-BG-1920.jpg");
+	background-position: 50% 50%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  @include background-size(cover);
+  .list-group-flush {
+    i {
+      color: $john-red !important;
+    }
+    li {
+      color: $gray-800;
+      &:hover {
+        cursor: pointer;
+        color: $john-red;
+      }
+    }
+  }
+  .sharp-btn {
+    color: $white;
+    border: 0;
+    position: relative;
+    @media only screen and (min-width: 768px) {
+      top: 5rem;
+    }
+    @include animated-button(
+      "false",
+      $john-red,
+      $john-red,
+      $john-red
+    );
+    padding: 10px;
+    font-weight: normal;
+    font-size: 15px;
+  }
+}

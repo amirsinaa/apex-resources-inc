@@ -1,0 +1,71 @@
+#mainNavbar {
+	border-bottom: 1px solid $dark-primary;
+	background-color: transparent;
+	@media (max-width: 991px) {
+		background: $white;
+	}
+	@include set-font($body-font);
+	@include transition-all;
+	.navbar-nav {
+		> li.nav-item {
+			position: relative;
+			> a.nav-link,
+			> a.nav-link:focus {
+				font-size: 0.95rem;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $dark-primary;
+				&:hover {
+					color: $primary;
+				}
+				&.active {
+					background-color: transparent;
+					&:hover {
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: 992px) {
+		.navbar-nav > li.nav-item > a.nav-link {
+			padding: 0.5rem 1rem;
+    }
+    .navbar-nav {
+      > li.nav-item {
+        &:nth-child(n + 2)::before {
+          border-left: 1px solid $dark-primary;
+          margin-right: 6px;
+        }
+        &:before {
+          content: "";
+          display: inline-block;
+          height: 10.4px;
+          position: absolute;
+          top: 0.8rem;
+        }
+      }
+    }
+		&.navbar-shrink {
+			border-bottom: 1px solid fade-out($gray-900, 0.9);
+			background-color: $white;
+			.navbar-brand {
+				color: $primary;
+				&:focus,
+				&:hover {
+					color: darken($primary, 0.1);
+				}
+			}
+			.navbar-nav > li.nav-item > a.nav-link,
+			.navbar-nav > li.nav-item > a.nav-link:focus {
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.pages-nav {
+	background: $white !important;
+}

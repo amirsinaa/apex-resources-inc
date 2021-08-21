@@ -1,0 +1,109 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 230ms ease;
+	-o-transition: all 230ms ease;
+	transition: all 230ms ease;
+}
+
+canvas {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+body,
+html {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	overflow: hidden;
+}
+
+body,
+html.on {
+	overflow: auto;
+}
+
+body {
+	@include set-font($body-font);
+}
+
+p {
+	line-height: 1.2;
+}
+
+hr.small-separator-hr {
+	max-width: 50px;
+	border-width: 3px;
+	border-color: $primary;
+}
+
+hr.separator-hr {
+	border-width: 1px;
+	border-color: darken($gray-600, 5.55%);
+	max-width: 85%;
+}
+
+hr.light {
+	border-color: $white;
+}
+
+a {
+	color: $primary;
+	text-decoration: none;
+	@include transition-all;
+	&:hover {
+		color: darken($primary, 0.1);
+		text-decoration: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include set-font($title-font);
+}
+
+.primary-title {
+	@include set-font($title-font);
+}
+
+section {
+	padding: 8rem 0;
+}
+
+::-moz-selection {
+	color: $white;
+	background: $gray-900;
+	text-shadow: none;
+}
+
+::selection {
+	color: $white;
+	background: $gray-900;
+	text-shadow: none;
+}
+
+img::-moz-selection {
+	color: $white;
+	background: transparent;
+}
+
+img::selection {
+	color: $white;
+	background: transparent;
+}
+
+img::-moz-selection {
+	color: $white;
+	background: transparent;
+}
+
+.list-group-flush:not(.forbidden-john) {
+	@media only screen and (max-width: 767px) {
+		text-align: center;
+	}
+}

@@ -1,0 +1,39 @@
+footer {
+  background-color: $footer-background;
+  .footer-links {
+    .list-inline-item:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+    font-weight: bold;
+    @media only screen and (max-width: 767px) {
+      display: block !important;
+      li {
+        display: block !important;
+      }
+    }
+    li {
+      margin: 0 50px;
+      font-size: .86375rem;
+      a {
+        color: $white;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .footer-social {
+    // @include horiz-align;
+    li {
+      margin: 0 10px;
+      font-size: .89375rem;
+      a {
+        i {
+          &:hover {
+            color: $primary !important;
+          }
+        }
+      }
+    }
+  }
+}

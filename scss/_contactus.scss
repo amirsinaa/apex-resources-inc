@@ -1,0 +1,27 @@
+#contact-form {
+  .btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+  }
+  .help-block.with-errors {
+    color: $john-red;
+    margin-top: 5px;
+  }
+  .form-group {
+    label {
+      color: $primary !important;
+      font-weight: normal !important;
+      font-size: 19px !important;
+    }
+    input,textarea {
+      border: 1.1px solid darken($primary,5.555%);
+    }
+    &.has-error {
+      input,textarea {
+        border: 1.2px solid $john-red;
+      }
+    }
+  }
+}

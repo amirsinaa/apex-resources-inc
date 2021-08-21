@@ -1,0 +1,68 @@
+@mixin transition-all() {
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+@mixin background-size($sizeMethod) {
+	background-size: $sizeMethod;
+}
+@mixin set-font($active-font) {
+	font-family: $active-font;
+}
+
+@mixin animated-button(
+	$transToColor,
+	$buttonBackground,
+	$buttonBorderColor,
+	$buttonTextColor
+) {
+  @if $transToColor == "true" {
+    background: {
+      image: linear-gradient(45deg, $buttonBackground 50%, transparent 50%);
+      position: 100%;
+      size: 400%;
+    }
+    -webkit-transition: background 300ms ease-in-out, color 150ms ease-in-out;
+    -o-transition: background 300ms ease-in-out, color 150ms ease-in-out;
+    transition: background 300ms ease-in-out, color 150ms ease-in-out;
+    border: 0.85px solid $buttonBorderColor;
+    color: $buttonTextColor !important;
+    &:hover {
+      background-position: 0;
+      color: $white !important;
+      cursor: pointer;
+      border-color: $buttonBorderColor;
+    }
+  } @else {
+    background: {
+      image: linear-gradient(45deg, $white 50%, $buttonBackground 50%);
+      position: 100%;
+      size: 400%;
+    }
+    -webkit-transition: background 300ms ease-in-out, color 150ms ease-in-out;
+    -o-transition: background 300ms ease-in-out, color 150ms ease-in-out;
+    transition: background 300ms ease-in-out, color 150ms ease-in-out;
+    color: $white !important;
+    &:hover {
+      border: 0;
+      color: $buttonTextColor !important;
+      background-position: 0;
+    }
+  }
+}
+
+@mixin horiz-align {
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}

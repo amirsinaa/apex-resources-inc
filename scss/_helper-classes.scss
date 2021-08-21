@@ -1,0 +1,162 @@
+.primary-title {
+	color: $primary-title;
+}
+
+.gray-100 {
+	color: $gray-100;
+}
+
+.gray-200 {
+	color: $gray-200;
+}
+
+.gray-300 {
+	color: $gray-300;
+}
+
+.gray-400 {
+	color: $gray-400;
+}
+
+.gray-500 {
+	color: $gray-500;
+}
+
+.gray-600 {
+	color: $gray-600;
+}
+
+.gray-700 {
+	color: $gray-700;
+}
+
+.gray-800 {
+	color: $gray-800;
+}
+
+.gray-900 {
+	color: $gray-900;
+}
+
+.white-opacity-500 {
+	color: $white !important;
+	opacity: 0.8;
+}
+
+.pt-6 {
+	padding-top: 5.9rem !important;
+}
+
+.py-6 {
+	padding-top: 4.5rem !important;
+	padding-bottom: 4.5rem !important;
+}
+
+.py-7 {
+	padding-top: 6rem !important;
+	padding-bottom: 6rem !important;
+}
+
+.py-8 {
+	padding-top: 7.5rem !important;
+	padding-bottom: 7.5rem !important;
+}
+
+.py-9 {
+	padding-top: 9rem !important;
+	padding-bottom: 9rem !important;
+}
+
+.py-10 {
+	padding-top: 10rem !important;
+	padding-bottom: 10rem !important;
+}
+
+.po-re {
+	position: relative;
+}
+
+.b-1 {
+	bottom: 1rem;
+}
+
+.vertical-center-align {
+	@include vertical-align;
+}
+
+.horiz-center-align {
+	@include horiz-align;
+}
+
+.white-text {
+	color: $white;
+}
+
+.text-primary-dark {
+	color: $text-primary-dark;
+}
+
+.bg-primary {
+	background-color: $primary !important;
+}
+
+.reset-thin-font {
+	font-weight: 100 !important;
+	font-family: unset;
+}
+
+.bg-dark {
+	background-color: $gray-900 !important;
+}
+
+.text-faded {
+	color: fade-out($white, 0.3);
+}
+
+.section-heading {
+	margin-top: 0;
+}
+
+.stretch-title {
+	font-size: 30px;
+	letter-spacing: -1px;
+	-webkit-transform: scale(1, 1.16);
+	-ms-transform: scale(1, 1.16);
+	transform: scale(1, 1.16);
+}
+
+.normal-letter-spacing {
+	letter-spacing: normal;
+}
+
+.OpenSans-Regular {
+	font-family: OpenSans-Regular !important;
+}
+
+.t-10 {
+	top: 0.625rem;
+}
+
+.norm-title {
+	font-size: 25px;
+	position: relative;
+	bottom: 5rem;
+	@media only screen and (max-width: 768px) {
+		font-size: 25px;
+		position: relative;
+		bottom: 3rem;
+		text-align: center;
+	}
+}
+
+.white-color {
+	color: $white !important;
+}
+
+.darken-bg {
+	background: $darken-bg;
+}
+
+.primary-color {
+	color: $primary;
+}
